@@ -1,5 +1,9 @@
-const Square = () => {
-  return <button className="square"></button>;
+const Square = ({ value }: { value: number }) => {
+  return (
+    <button className="square" onClick={() => console.log("click")}>
+      {value}
+    </button>
+  );
 };
 
 const Board = () => {
@@ -9,19 +13,19 @@ const Board = () => {
     <div>
       <div className="status">{status}</div>
       <div className="board-row">
-        <Square />
-        <Square />
-        <Square />
+        <Square value={0} />
+        <Square value={1} />
+        <Square value={2} />
       </div>
       <div className="board-row">
-        <Square />
-        <Square />
-        <Square />
+        <Square value={3} />
+        <Square value={4} />
+        <Square value={5} />
       </div>
       <div className="board-row">
-        <Square />
-        <Square />
-        <Square />
+        <Square value={6} />
+        <Square value={7} />
+        <Square value={8} />
       </div>
     </div>
   );
