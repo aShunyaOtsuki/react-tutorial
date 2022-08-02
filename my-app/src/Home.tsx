@@ -1,9 +1,9 @@
 import { useState } from "react";
 
 const Square = (props: { value: number }) => {
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState("");
   return (
-    <button className="square" onClick={() => setValue(props.value)}>
+    <button className="square" onClick={() => setValue("X")}>
       {value}
     </button>
   );
