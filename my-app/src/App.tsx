@@ -5,6 +5,7 @@ import store from "./reducer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Profile } from "./Profile";
 import { Home } from "./Home";
+import { Game } from "./Game";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Routes>
           <Route path="profile" element={<Profile />} />
           <Route path="home" element={<Home />} />
+          <Route path="game" element={<Game />} />
         </Routes>
       </BrowserRouter>
     </Provider>
